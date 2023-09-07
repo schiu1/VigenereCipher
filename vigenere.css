@@ -1,0 +1,9 @@
+textarea{
+    resize: none;
+}
+
+.inputDiv, .keyDiv, .outputDiv, .header, .buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
