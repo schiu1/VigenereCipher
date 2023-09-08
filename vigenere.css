@@ -7,3 +7,7 @@ textarea{
     justify-content: center;
     margin: 2%;
 }
+
+.encryptButton, .decryptButton{
+    margin: 2px;
+}

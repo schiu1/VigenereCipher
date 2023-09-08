@@ -11,13 +11,14 @@
         <h1>Vignere Cipher</h1>
     </div>
     <div class="inputDiv">
-        <textarea name="inputText" id="inputText" cols="30" rows="10" placeholder="Enter text to encrypt here."></textarea>
+        <textarea name="inputText" id="inputText" cols="30" rows="10" placeholder="Enter text here."></textarea>
     </div>
     <div class="keyDiv">
         <input type="text" id="keyInput" placeholder="Enter cipher key here.">
     </div>
     <div class="buttonDiv">
-        <button id="calculate" onclick="Encrypt()">Encrypt</button>
+        <button class="encryptButton" id="encrypt" onclick="Encrypt()">Encrypt</button>
+        <button class="decryptButton" id="decrypt">Decrypt</button>
     </div>
     <div class="outputDiv">
         <textarea name="outputText" id="outputText" cols="30" rows="10" readonly></textarea>
