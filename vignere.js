@@ -1,10 +1,9 @@
-//document.getElementById('calculate').addEventListener('lengthclick', Encrypt);
+//document.getElementById('calculate').addEventListener('click', Encrypt);
 
 
 function Encrypt(){
     const text = document.getElementById('inputText').value;
-    const newText = text.replace(/[\.\?\!\ ]/g, "");
-    const bestText = newText.toUpperCase();
+    const bestText = text.toUpperCase();
     let key = document.getElementById('keyInput').value;
     key = key.toUpperCase();
     let cipher = "";
@@ -20,6 +19,11 @@ function Encrypt(){
     }
     
     for(let i=0; i<bestText.length; i++){
+        const triggers = [".", " ", "?", "!"];
+        if (triggers.includes(bestText.charAt(i))){
+            cipher += bestText.charAt(i);
+            continue;
+        }
         const number = ((bestText.charCodeAt(i)-65) + (key.charCodeAt(i)-65)) % 26;
         const e = String.fromCharCode(number + 65);
         cipher += e;
