@@ -17,8 +17,8 @@
         <input type="text" id="keyInput" placeholder="Enter cipher key here.">
     </div>
     <div class="buttonDiv">
-        <button class="encryptButton" id="encrypt" onclick="Encrypt()">Encrypt</button>
-        <button class="decryptButton" id="decrypt">Decrypt</button>
+        <button class="encryptButton" id="encrypt" onclick="Encrypt('encrypt')">Encrypt</button>
+        <button class="decryptButton" id="decrypt" onclick="Encrypt('decrypt')" disabled>Decrypt</button>
     </div>
     <div class="outputDiv">
         <textarea name="outputText" id="outputText" cols="30" rows="10" readonly></textarea>
