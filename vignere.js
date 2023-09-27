@@ -32,6 +32,9 @@ function Encrypt(type){
             console.log(bestText.charCodeAt(i)-65);
             console.log(key.charCodeAt(i)-65);
             number = ((bestText.charCodeAt(i)-65) - (key.charCodeAt(i)-65)) % 26;
+            if (number < 0){
+                number = 26-(-number);
+            }
             console.log(number);
         }
         const e = String.fromCharCode(number + 65);
