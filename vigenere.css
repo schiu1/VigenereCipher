@@ -1,3 +1,8 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/pastel-yellow-vignette-concrete-textured-background_53876-124561.jpg?w=996&t=st=1696271545~exp=1696272145~hmac=31b5dff5e6ca4f7671b7081faeddc724aa66082101bea76c5087c42aa7e7c274");
+    background-size: 1500px;
+}
+
 textarea{
     resize: none;
 }
@@ -10,4 +15,8 @@ textarea{
 
 .encryptButton, .decryptButton{
     margin: 2px;
+}
+
+.header{
+    font-family: "Lucida Handwriting";
 }
