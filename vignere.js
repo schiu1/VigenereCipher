@@ -1,11 +1,25 @@
 //document.getElementById('calculate').addEventListener('click', Encrypt);
 
 
-function Encrypt(type){
+function Vigenere(type){
     const text = document.getElementById('inputText').value;
     const bestText = text.toUpperCase();
+    if(text.length == 0){
+        document.getElementById('textError').style.display = 'flex';
+        return;
+    }
+    else if (text.length != 0 && document.getElementById('textError').style.display == 'flex'){
+        document.getElementById('textError').style.display = 'none';
+    }
     let key = document.getElementById('keyInput').value;
     key = key.toUpperCase();
+    if(key.length == 0){
+        document.getElementById('keyError').style.display = 'flex';
+        return;
+    }
+    else if (key.length != 0 && document.getElementById('keyError').style.display == 'flex'){
+        document.getElementById('keyError').style.display = 'none';
+    }
     let result = "";
     console.log("text: " + bestText);
     console.log("key: " + key);

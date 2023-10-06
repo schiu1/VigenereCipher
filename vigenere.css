@@ -7,7 +7,7 @@ textarea{
     resize: none;
 }
 
-.inputDiv, .keyDiv, .outputDiv, .header, .buttonDiv{
+.inputDiv, .keyDiv, .outputDiv, .header, .buttonDiv, .textError, .keyError{
     display: flex;
     justify-content: center;
     margin: 2%;
@@ -15,8 +15,21 @@ textarea{
 
 .encryptButton, .decryptButton{
     margin: 2px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.encryptButton:active, .decryptButton:active{
+    background-color: black;
+    color: white;
 }
 
 .header{
     font-family: "Lucida Handwriting";
+}
+
+.textError, .keyError{
+    color: red;
+    display: none;
 }
