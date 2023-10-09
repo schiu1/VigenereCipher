@@ -48,7 +48,7 @@ function Vigenere(type){
     }
     
     for(let i=0; i<bestText.length; i++){
-        const triggers = [".", " ", "?", "!"];
+        const triggers = [".", " ", "?", "!", ",", "'"];
         if (triggers.includes(bestText.charAt(i))){
             result += bestText.charAt(i);
             continue;

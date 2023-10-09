@@ -10,7 +10,7 @@ textarea{
 .inputDiv, .keyDiv, .outputDiv, .header, .buttonDiv, .textError, .keyError{
     display: flex;
     justify-content: center;
-    margin: 2%;
+    margin: 1%;
 }
 
 .encryptButton, .decryptButton{
@@ -29,7 +29,14 @@ textarea{
     font-family: "Lucida Handwriting";
 }
 
+.inputHeader, .outputHeader{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .textError, .keyError{
+    font-family: 'Courier New', Courier, monospace;
     color: red;
     display: none;
 }
